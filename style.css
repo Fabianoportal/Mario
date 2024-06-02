@@ -126,7 +126,7 @@ video {
 }
 
 .formulario-fale-conosco {
-    background-color: white;
+    background-color: gray;
     display: flex;
     gap: 20px;
     flex-direction:column;
