@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- defini o idioma -->
+
+<head>
+    <!-- abre ajustes para a cabeça do site(parte invisivel) -->
+    <!-- inicia a configuração do corpo do site -->
+    <meta charset="UTF-8">
+    <!-- configura o teclado regional -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- configura escala(tamanho) da pagina -->
+    <link rel="stylesheet" href="style.css">
+    <!-- abre link com o css para estilizar-->
+    <title>Mario Bros</title>
+    <!-- nome que aparece na aba -->
+</head>
+<!-- fecha ajustes para a cabeça do site(parte invisivel) -->
+
+<body>
+    <!-- abre ajustes para o corpo do site(parte visivel) -->
+    <div class="mascara-formulario" onclick="esconderform()"></div>
+    <div class="header">
+        <img src="./icon.png" alt="rosto Mario">
+        <a>Home</a>
+        <a>Nossos serviços</a>
+        <a>Fale conosco</a>
+    </div>
+    <div class="caixa-mae">
+        <div class="caixa-principal">
+            <!-- abre caixa/da apelido para caixa -->
+            <img src="./logo (1).png" alt="logo do Mario Bros" class="logo-mario">
+            <!-- procura e salva a imagem/defini texto alternativo/cria apelido para a imagem -->
+            <p>Encanadores Mario e Luigi - Resolvendo seus problemas com estilo!</p>
+            <p>Você já se econtrou em situação de emergência com encanamento? Vazamentos inesperados, canos entupidos ou
+                torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o dia! apresentamos
+                a
+                vocês
+                os encanadores mais famosos do reino dos cogumelos - Mario e Luigi!</p>
+
+            <button onclick="mostraform()">Entre em contato</button>
+            <!-- cria apelido para o botão/ defini o texto que aparece no botão. -->
+        </div>
+        <!-- fecha caixa -->
+        <div>
+            <!-- abre caixa -->
+            <img src="./mario.png" alt="Mario e Luigi" class="imagem-mario-luigi">
+        </div>
+        <!-- fecha caixa -->
+
+    </div>
+
+    <div class="caixa-video">
+        <!-- abre caixa/da apelido para caixa -->
+        <video src="./video.mp4" autoplay muted loop></video>
+        <!-- abre caixa/da apelido para caixa -->
+        <div class="mascara"></div>
+    </div>
+    <!-- fecha caixa -->
+    <a href="https://api.whatsapp.com/send?phone=5551994229298&text=Ol%C3%A1,%20tudo%20bem?%20Gostaria%20de%20realizar%20um%20or%C3%A7amento!"
+        class="link-whatsapp">
+        <img src="./whatsapp.png" alt="link para o whatsapp">
+    </a>
+    <form 
+        class="formulario-fale-conosco" 
+        action="https://formcarry.com/s/tYsOt4eiak6" method="POST"
+        enctype="multipart/form-data">
+        <input placeholder="Seu nome" type="text" name="nome">
+        <input placeholder="Seu telefone" type="tel" name="telefone">
+        <textarea placeholder="Digite seu problema aqui..." name="duvida"></textarea>
+        <button type="submit">Pedir orçamento</button>
+
+    </form>
+</body>
+<!-- fecha ajustes para o corpo do site(parte visivel) -->
+<script src="scripts.js"></script>
+
+</html>
